@@ -157,14 +157,48 @@ footer:hover {
     border-radius: 5px;
 }
 
+/* Estilos para dispositivos móviles */
 @media only screen and (max-width: 768px) {
-    /* Muestra el icono de hamburguesa en dispositivos móviles */
-    .menu-toggle {
-        display: flex;
+    nav ul {
+        display: none; /* Oculta la lista de navegación en dispositivos móviles por defecto */
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Ajusta según sea necesario para evitar que el menú cubra el contenido */
+        background-color: #444;
+        z-index: 1;
     }
 
-    /* Oculta la lista de navegación en dispositivos móviles */
-    nav ul {
-        display: none;
+    nav ul.show {
+        display: flex; /* Muestra la lista de navegación cuando la clase 'show' está presente */
+    }
+
+    nav li {
+        text-align: center;
+        margin: 0;
+        width: 100%;
+        padding: 10px 0;
+        border-bottom: 1px solid #333;
+    }
+
+    nav a {
+        color: white;
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .menu-toggle span {
+        height: 3px;
+        width: 25px;
+        background: #333;
+        margin: 5px 0;
+        border-radius: 5px;
     }
 }
+
