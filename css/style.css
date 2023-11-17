@@ -157,7 +157,6 @@ footer:hover {
     border-radius: 5px;
 }
 
-/* Estilos para dispositivos móviles */
 @media only screen and (max-width: 768px) {
     nav ul {
         display: none; /* Oculta la lista de navegación en dispositivos móviles por defecto */
@@ -201,4 +200,3 @@ footer:hover {
         border-radius: 5px;
     }
 }
-
